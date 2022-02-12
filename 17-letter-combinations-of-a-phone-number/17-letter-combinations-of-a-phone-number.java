@@ -1,7 +1,7 @@
 class Solution {
     public List<String> letterCombinations(String digits) {
         
-        List<String> str = new LinkedList<>();
+        List<String> str = new ArrayList<>();
         
         if(digits.length() == 0) {
             return str;
