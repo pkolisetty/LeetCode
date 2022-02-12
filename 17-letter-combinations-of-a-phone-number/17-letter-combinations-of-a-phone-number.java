@@ -1,7 +1,7 @@
 class Solution {
     public List<String> letterCombinations(String digits) {
         
-        List<String> str = new ArrayList<>();
+        List<String> str = new LinkedList<>();
         
         if(digits.length() == 0) {
             return str;
@@ -16,7 +16,6 @@ class Solution {
         for(int i = 0; i < firstDigitString.length(); i++){
             str.add(Character.toString(firstDigitString.charAt(i)));
         }
-        
         
         for(int i = 1; i < digits.length(); i++){
             int size = str.size();
