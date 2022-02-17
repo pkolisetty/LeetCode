@@ -8,8 +8,7 @@ class Solution {
             int size = output.size();
             
             for(int j = 0; j < size; j++){
-                System.out.print(output.get(j)); 
-                List<Integer> temp = new ArrayList<Integer>(output.get(j));
+                List<Integer> temp = new ArrayList<>(output.get(j));
                 temp.add(i);
                 output.add(temp);
             }
